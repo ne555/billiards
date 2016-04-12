@@ -16,8 +16,8 @@ private:
 	//A 'ParticleContact' represents two particles which are in contact. The second of these pointers can
 	//be null to represent contacts of the first particle with scenery still elements (in our case with
 	//a plane which is assumed to have an infinite mass).
-	particle *p1;
-	particle *p2;
+	const particle *p1;
+	const particle *p2;
 
 	//vector indicating the direction of the contact
 	vector3 contactNormal;
@@ -33,10 +33,10 @@ public:
 	void setContactNormal(const vector3& contactNormal);
 	double getInterpenetration() const;
 	void setInterpenetration(double interpenetration);
-	const particle*& getP1() const;
-	void setP1(const particle*& p1);
-	const particle*& getP2() const;
-	void setP2(const particle*& p2);
+	const particle* getP1() const;
+	void setP1(const particle* p1);
+	const particle* getP2() const;
+	void setP2(const particle* p2);
 
 };
 

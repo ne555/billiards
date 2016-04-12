@@ -39,7 +39,7 @@ ParticleContact* BallPlaneColDetect::haveCollided( Ball *b, Plane *p)
 	if ( p->getDistance(posBall.getVector3x(), posBall.getVector3y(),0) == b->getRadio() )
 	{
 		pC= new ParticleContact();
-		pC->setP1(& b));
+		pC->setP1(b);
 
 		pC->setP2(NULL);
 		//directionComtact = plane.getnornal;
@@ -47,7 +47,7 @@ ParticleContact* BallPlaneColDetect::haveCollided( Ball *b, Plane *p)
 		//ParticleContact pC(&b, &p, directionContact,0);
 		return pC;
 	}
-	else if ( p.getDistance(posBall.getVector3x(), posBall.getVector3y(),0) < b.getRadio() )
+	else if ( p->getDistance(posBall.getVector3x(), posBall.getVector3y(),0) < b->getRadio() )
 	{
 		//interpenetration no es cero...
 
