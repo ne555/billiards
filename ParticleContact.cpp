@@ -52,19 +52,19 @@ void ParticleContact::setInterpenetration(double interpenetration) {
 this->interpenetration = interpenetration;
 }
 
-const particle* ParticleContact::getP1() const {
+particle* ParticleContact::getP1() const {
 return p1;
 }
 
-void ParticleContact::setP1(const particle* p1) {
+void ParticleContact::setP1(particle* p1) {
 this->p1 = p1;
 }
 
-const particle* ParticleContact::getP2() const {
+particle* ParticleContact::getP2() const {
 return p2;
 }
 
-void ParticleContact::setP2(const particle* p2) {
+void ParticleContact::setP2(particle* p2) {
 this->p2 = p2;
 }
 
